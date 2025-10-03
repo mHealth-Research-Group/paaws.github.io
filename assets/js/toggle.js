@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const h2s = Array.from(container.querySelectorAll('h2'));
   if (h2s.length === 0) return;
 
+  let uid = 0;
   h2s.forEach(h2 => {
     const sectionNodes = [];
     let n = h2.nextSibling;
@@ -38,6 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const body = document.createElement('div');
     body.className = 'collapsible-body';
+    body.id = body.id || `collapsible-body-${++uid}`;
     sectionNodes.forEach(node => body.appendChild(node));
     h2.after(body);
 
@@ -46,6 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
     h2.setAttribute('role', 'button');
     h2.setAttribute('tabindex', '0');
     h2.setAttribute('aria-expanded', 'true');
+    h2.setAttribute('aria-controls', body.id);
 
     function toggle() {
       const collapsed = body.classList.toggle('collapsed');
