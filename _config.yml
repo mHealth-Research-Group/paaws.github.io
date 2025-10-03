@@ -11,3 +11,9 @@ header_pages:
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+
+# Ensure Kramdown processes attribute IDs like `{#id}`
+markdown: kramdown
+kramdown:
+  input: Kramdown
+  auto_ids: true
