@@ -8,63 +8,6 @@ permalink: /codebook/
 
 The PAAWS dataset consists of data from the PAAWS study in which there were three data collection protocols: the Simulated Free Living and Exercise Laboratory (SimFL+Lab) protocol, the Free Living (FL) protocol, and an optional Sleep protocol that took place during the FL protocol and provided labeled PSG data from up to two nights of at-home sleep. In this codebook, we discuss the data that resulted from each protocol, not how it was collected. To review each of the data collection protocols, refer to [The PAAWS Study Data Collection Protocol](https://docs.google.com/document/d/1kgi7MNqh516IOvbND5aj7rMhJ-_FHNIzrDQDF_l2Spc/edit?tab=t.0).
 
-**Table of Contents**
-
-[Overview of Available Data and Directory Structure](#overview-of-available-data-and-directory-structure)
-
-[Available Data and Description of Each Data Type](#available-data-and-description-of-each-data-type)
-
-[Data Summary Table](#data-summary-table)
-
-[Accelerometer Data](#accelerometer-data)
-
-[Partially missing accelerometer data](#partially-missing-accelerometer-data)
-
-[Missing accelerometer data](#fully-missing-accelerometer-data)
-
-[IMU Data (SimFL+Lab Only)](#imu-data-\(simfl+lab-only\))
-
-[Missing IMU data](#missing-imu-data)
-
-[Heart Rate Data (SimFL+Lab Only)](#heart-rate-data-\(simfl+lab-only\))
-
-[Metabolic Data (SimFL+Lab Only)](#metabolic-data-\(simfl+lab-only\))
-
-[Phone Data](#phone-data)
-
-[Phone Data: Ambient Pressure Data](#phone-data:-ambient-pressure-data)
-
-[Phone Data: Light Sensor](#phone-data:-light-sensor)
-
-[Phone Data: Proximity sensor](#phone-data:-proximity-sensor)
-
-[Phone Data: Acceleration](#phone-data:-acceleration)
-
-[Phone Data: App Event Counts](#phone-data:-app-event-counts)
-
-[Phone Data: Notification Logs](#phone-data:-notification-logs)
-
-[Phone Data: Step count](#phone-data:-step-count)
-
-[PSG Sleep Data (Sleep Protocol Only)](#psg-sleep-data-\(sleep-protocol-only\))
-
-[Sleep data scoring](#sleep-data-scoring)
-
-[Waking Day Annotations Data](#waking-day-annotations-data)
-
-[Annotation Label Taxonomy](#annotation-label-taxonomy)
-
-[Notes Data](#notes-data)
-
-[General Note](#general-note)
-
-[Protocol Deviations Notes (SimFL+Lab Only)](#protocol-deviations-notes-\(simfl+lab-only\))
-
-[Recall Notes (FL Only)](#recall-notes-\(fl-only\))
-
-## 
-
-## 
 
 # Overview of Available Data and Directory Structure  {#overview-of-available-data-and-directory-structure}
 
