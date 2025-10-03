@@ -1,0 +1,13 @@
+title: PAAWS Study
+description: "Documentation for the PAAWS dataset and study protocol."
+theme: minima
+
+# Show these pages in the top navigation
+header_pages:
+  - "The PAAWS Dataset Codebook.docx.md"
+  - "The PAAWS Study Data Collection Protocol.md"
+
+# Enable common GitHub Pages plugins used by Minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
