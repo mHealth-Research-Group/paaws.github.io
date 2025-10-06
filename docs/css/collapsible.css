@@ -1,0 +1,27 @@
+/* Collapsible sections (H1 and H2) */
+.collapsible-h1, .collapsible-h2 {
+  cursor: pointer;
+}
+
+.collapsible-h1:focus, .collapsible-h2:focus {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
+.collapsible-body.collapsed {
+  display: none;
+}
+
+/* Arrow indicator like Notion */
+.collapsible-h1::before, .collapsible-h2::before {
+  content: '▾';
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.25em;
+  color: currentColor;
+}
+
+.collapsible-h1[aria-expanded="false"]::before,
+.collapsible-h2[aria-expanded="false"]::before {
+  content: '▸';
+}
