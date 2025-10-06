@@ -1,6 +1,5 @@
 # PAAWS Study
 
-Welcome. Use the links below to view the two main documents:
+Welcome to the PAAWS Study documentation.
 
-- [The PAAWS Dataset Codebook](codebook.md)
-- [The PAAWS Study Data Collection Protocol](protocol.md)
+This site provides comprehensive documentation for the PAAWS (Physical Activity and Wearable Sensors) dataset and study protocol. Use the navigation on the left to explore the different sections.

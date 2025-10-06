@@ -5,24 +5,22 @@ site_url: https://paawsstudy.github.io/paaws_website/
 theme:
   name: material
   features:
+    - navigation.path
     - navigation.instant
-    - navigation.tracking
     - navigation.sections
     - navigation.indexes
-    - navigation.top
-    - navigation.path
-    - search.suggest
-    - search.highlight
-    - content.code.copy
+    - navigation.tracking
     - content.code.annotate
     - toc.follow
+    - navigation.footer
+    - navigation.top
+    - content.code.copy
+    - content.tabs.link
   palette:
-    # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
       toggle:
         icon: material/brightness-auto
         name: Switch to light mode
-    # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: indigo
@@ -30,7 +28,6 @@ theme:
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-    # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: indigo
@@ -49,29 +46,22 @@ nav:
 
 markdown_extensions:
   - admonition
-  - attr_list
-  - md_in_html
   - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
-  - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.tabbed:
-      alternate_style: true
-  - pymdownx.tasklist:
-      custom_checkbox: true
+  - pymdownx.magiclink
+  - attr_list
   - toc:
       permalink: true
-      toc_depth: 3
+  - md_in_html
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.keys
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.tabbed:
+      alternate_style: true
 
 plugins:
   - search
-
-extra_javascript:
-  - js/collapsible.js
-
-extra_css:
-  - css/collapsible.css

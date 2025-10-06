@@ -4,11 +4,11 @@ This codebook details the data collection protocols (i.e., what participants did
 
 The PAAWS Study data were collected across three protocols: the simulated free living and lab (SimFL+Lab) protocol, the free-living (FL) protocol, and the Sleep protocol (completed during the FL protocol). Data from the all sensors were synchronized to each other and the annotations. Research assistants conducted quality control throughout, with a researcher verifying the process and signing off on the work..  
 
-# SimFL+Lab Data Collection Protocol {#simfl+lab-data-collection-protocol}
+## SimFL+Lab Data Collection Protocol {#simfl+lab-data-collection-protocol}
 
 The SimFL+Lab Protocol was an approximately four-hour supervised protocol consisting of an approximately one-hour (minimally controlled) simulated free-living protocol as well as an approximately three-hour (highly controlled) exercise laboratory protocol. 
 
-## SimFL+Lab Sensors {#simfl+lab-sensors}
+### SimFL+Lab Sensors {#simfl+lab-sensors}
 
 For the collection of accelerometer and IMU data during the SimFL+Lab session, we used 21  [ActiGraph GT9X Link](https://drive.google.com/file/d/16kMPyuiWCeQhxgLnqfwG1Z4l_mos8c-X/view?usp=drive_link) sensors. The devices were set to sample accelerometer data at a rate of 80 Hz and to sample IMU data at a rate of 100 Hz. Additionally, participants wore a [Polar H10 heart rate monitor](https://www.polar.com/us-en/sensors/h10-heart-rate-sensor) on their chests throughout the protocol. 
 
@@ -16,7 +16,7 @@ During a portion of the protocol, participants wore a mask connected to a [CPET 
 
 In addition to the worn sensors, participants carried their personal mobile phones (with a GT9X Link taped to the back) throughout the SimFL+Lab session. If their personal phone was a compatible Android phone, custom data collection software was run on the phone to collect additional data. 
 
-## Preparation  {#preparation}
+### Preparation  {#preparation}
 
 During the hour before each participant arrived, researchers prepared for the data collection protocol by:
 
@@ -26,7 +26,7 @@ During the hour before each participant arrived, researchers prepared for the da
 - Initializing ActiGraph GT9X Link sensors.   
 - Creating sensor synchronization points by placing all the sensors into a box, shaking the box, and dropping the box onto a flat surface. The box was then left at rest until the participant arrived so it was easy to identify the shaking motion for synchronizing sensor data. The synchronization points were used to ensure data could be time-synced to sub-second precision across all sensors.
 
-## Sensor Wear Locations {#sensor-wear-locations}
+### Sensor Wear Locations {#sensor-wear-locations}
 
 We collected data from 21 GT9X Link sensors in the SimFL+Lab sessions. Twenty of these sensors were worn on a participant’s body and one was attached to the back of a participant’s phone. Sensors were secured to the participant’s body using fitting straps, clips, and tape. [Table 1](#table-1.-the-21-sensor-locations-used-in-the-paaws-simfl+lab-protocol.) describes all 21 sensor locations and [Figure 1](#figure-1.-images-of-sensors-on-a-person’s-body-\(from-left-to-right-and-top-to-bottom\):-\(a\)-right-and-left-wrists-top-sensors,-\(b\)-right-and-left-wrists-bottom-sensors,-\(c\)-right-waist-sensors,-\(d\)-left-waist-sensors,-\(e\)-right-and-left-thigh-sensors,-\(f\)-right-ankle-anterior-sensor,-\(g\)-right-ankle-lateral-sensor,-\(h\)-right-ankle-medial-sensor,-and-\(i\)-right-ankle-posterior-sensor.) shows the sensor wear locations.
 
@@ -60,7 +60,7 @@ We collected data from 21 GT9X Link sensors in the SimFL+Lab sessions. Twenty of
 | Left Ankle Posterior | Posterior aspects of the left ankle, positioned such that the ActiGraph insignia on the front of the device reads from the medial to lateral direction and the device is oriented upright. |
 | Phone | Back of the phone, positioned such that the ActiGraph insignia on the front of the device reads upright from the top to the bottom of the phone. The sensor was attached to a custom plastic clip glued to the phone’s case.  |
 
-## SimFL+Lab Data Collection Session {#simfl+lab-data-collection-session}
+### SimFL+Lab Data Collection Session {#simfl+lab-data-collection-session}
 
 Participants were instructed to wear comfortable clothes that they could move around in (e.g., athletic clothing) and comfortable footwear for walking/running (e.g., sneakers) for the SimFL+Lab data collection. 
 
@@ -74,7 +74,7 @@ During the entire portion of the SimFL+Lab data collection protocol, a researche
 
 Once wearing all sensors, participants performed sensor synchronization movements. They began by standing completely still until the research assistant signaled them to walk along a corridor using what we called a "modified Frankenstein walk": kicking one leg straight up with each step while keeping both legs rigid, but striking the raised thigh with the opposite hand rather than keeping arms extended. Participants repeated this sequence (standing still, then performing the modified walk) three times. These movements provide reference points to verify proper synchronization between annotations and sensor data.
 
-### Simulated Free Living (SimFL) Protocol {#simulated-free-living-(simfl)-protocol}
+#### Simulated Free Living (SimFL) Protocol {#simulated-free-living-(simfl)-protocol}
 
 In the SimFL portion, participants performed 16 scenarios (Table 2). Researchers provided little-to-no guidance or constraints on how the participants performed these scenarios. The only constraint imposed was the ordering of the tasks and the approximate duration of these tasks. While most SimFL sessions followed the ordering of the tasks shown here, there was some variations to accommodate external factors (e.g., weather, road blockage).
 
@@ -99,7 +99,7 @@ In the SimFL portion, participants performed 16 scenarios (Table 2). Researchers
 | Elevator Up | Rode the elevator up five floors. |
 | Elevator Down | Rode the elevator down five floors. |
 
-### Lab Protocol {#lab-protocol}
+#### Lab Protocol {#lab-protocol}
 
 During the controlled lab protocol, participants completed 32 activities within an exercise laboratory at Northeastern University. Participants were given specific instructions on how to complete each activity. They were reminded to adhere to the protocol if they were observed deviating from the protocol. 
 
@@ -153,7 +153,7 @@ The remaining 19 of the 32 Lab protocol activities were completed without wearin
 | Machine\_Chest\_Press\_Lab | Do two sets of eight presses on a chest press machine at the lowest possible weight (0 added resistance). |
 | Machine\_Leg\_Press\_Lab | Do two sets of eight presses on a leg press machine at the lowest possible weight (0 added resistance). |
 
-## End of the SimFL+Lab Session {#end-of-the-simfl+lab-session}
+### End of the SimFL+Lab Session {#end-of-the-simfl+lab-session}
 
 After the SimFL+Lab protocol, researchers removed all the sensors from the participant. The participant removed the thigh sensors and heart rate monitors themselves while out of sight of the researchers.
 
@@ -164,13 +164,13 @@ In most cases, after completing the SimFL+Lab protocol, the participant immediat
 Once the participant left the laboratory, the researcher thoroughly cleaned all equipment and downloaded data from the devices. Researchers also recorded notes on any deviations from the protocol that may have occurred during either the Lab or the SimFL protocols and on any problems encountered when downloading data off the devices.    
 A research assistant then performed a manual quality check on all sensors immediately after data collection concluded. To perform this check, the accelerometer signals of all 21 accelerometers were loaded into Signaligner Pro with the labels that a research assistant recorded in real time using the tablet computer. For each activity, a trained research assistant carefully viewed the accelerometer data. Given that there are multiple sensors on the same limb, the research assistant was typically able to identify when a sensor yielded an unexpected acceleration signal. Problems like incorrect sensor orientation or a faulty sensor were identified and rectified or documented in each participant’s notes file.
 
-# Free-Living Data Collection Protocol {#free-living-data-collection-protocol}
+## Free-Living Data Collection Protocol {#free-living-data-collection-protocol}
 
 The PAAWS free-living (FL) protocol portion of the PAAWS study was an approximately eight-day free-living period collecting over seven full days of continuous data. Data collection began partway through Day 1, often just after the SimFL+Lab protocol. It then continued for six full days and seven nights (Day 2 through Day 7). The protocol concluded partway through Day 8\.
 
 During the FL protocol, participants were asked to engage in their daily life—as they would naturally—while continuously wearing five accelerometers on multiple limbs and an additional sixth accelerometer on the back of their phone. During as much of their waking day as possible, participants also wore a chest-mounted, front-facing camera, the footage of which we used to establish ground-truth labels for each day.
 
-## Free-Living Protocol Sensors {#free-living-protocol-sensors}
+### Free-Living Protocol Sensors {#free-living-protocol-sensors}
 
 For the collection of accelerometer data during the FreeLiving session, we used ActiGraph GT9X Link sensors (the same sensors used during the SimFL+Lab protocol). We programmed the devices to sample accelerometer data at a rate of 80 Hz. Unlike in the Lab+SimFL, the device IMU sensors were turned off, which was necessary to achieve one-week of continuous data collection on a single charge. 
 
@@ -182,7 +182,7 @@ During waking day hours, participants also wore a [C3 Cammpro camera](https://ww
 
 For the duration of the FL protocol, participants were given a laptop that they were instructed to connect to their home internet. The laptop was to be left in the home. Each night, before going to sleep, the participant plugged the camera into the laptop to reset the camera’s internal clock, charge the camera battery, and securely transfer video from that day to the research team overnight. The participant also charged the camera’s extended battery through the laptop overnight. 
 
-## Free-Living Session Preparation {#free-living-session-preparation}
+### Free-Living Session Preparation {#free-living-session-preparation}
 
 We initialized six ActiGraph GT9X Link sensors one hour prior to the scheduled participant arrival time. During this one-hour time frame, researchers prepared for the data collection protocol by:
 
@@ -190,7 +190,7 @@ We initialized six ActiGraph GT9X Link sensors one hour prior to the scheduled p
 - Creating sensor synchronization points to ensure data could be time-synced to sub-second precision across all sensors. This was accomplished by placing all the sensors into a box, shaking the box, and dropping the box onto a flat surface. The box was then left at rest until the participant arrived so it was easy to identify the shaking motion for synchronizing sensor data. The synchronization points were used to ensure data could be time-synced to sub-second precision across all sensors.  
 - Confirming the camera and extended battery were fully charged,the camera datetime was correct, and the camera was ready to begin recording. 
 
-## FL Sensor Wear Locations {#fl-sensor-wear-locations}
+### FL Sensor Wear Locations {#fl-sensor-wear-locations}
 
 In the FL protocol, we collected data from six sensors: five on-body sensors and one on-phone sensor. The details of the wear locations are in [Table 5](#table-5.-the-six-sensor-locations-used-in-the-paaws-fl-protocol.) and [Figure 3](#figure-3.-images-of-sensors-on-a-person’s-body-\(from-left-to-right\):-\(a\)-right-and-left-wrists-sensors,-\(b\)-right-waist-sensor,-\(c\)-right-thigh-sensor,-and-\(d\)-right-ankle-sensor.) shows the on-body sensor wear location.
 
@@ -213,7 +213,7 @@ In the FL protocol, we collected data from six sensors: five on-body sensors and
 
 **NOTE:** For any users of the PAAWS data using both the FL and SimFL+Lab data, the waist and ankle sensors had to be rotated 90 degrees in the FL protocol as compared with the SimFL+Lab protocol. For these sensors, we had to use sensor straps and holders for more robust and secure limb attachment in free-living, which caused a different sensor orientation.
 
-## Start of the Free-Living Protocol {#start-of-the-free-living-protocol}
+### Start of the Free-Living Protocol {#start-of-the-free-living-protocol}
 
 When the participant arrived at the laboratory, a researcher explained the Free-Living Protocol to the participant and, if necessary, obtained informed consent. The researcher then showed the participant how to put on the ActiGraph sensors and let the participant practice putting the sensors on themselves. After practicing putting on the FL sensors, we gave participants a pamphlet detailing how to properly wear the sensors should they need to take them off throughout the week. Participants were instructed to wear the right thigh sensor, which was secured using a waterproof tape, continuously for the entire week. They were also instructed to wear the four remaining on-body sensors continuously except when engaged in water-based activities, such as showering or swimming. If participants felt any discomfort while wearing the on-body sensors, they were instructed to temporarily remove these sensors. They were instructed to leave the phone sensor attached to their phone’s case and use their phone normally.  
 
@@ -225,7 +225,7 @@ Once participants wore all the sensors and wore the camera and the camera had st
 
 Participants left the laboratory wearing all the sensors and the camera and with the sensor-wear instructions, the laptop, and an extra Tegaderm adhesive. 
 
-## During the FreeLiving Protocol {#during-the-freeliving-protocol}
+### During the FreeLiving Protocol {#during-the-freeliving-protocol}
 
 During data collection, participants performed two sensor synchronization movements twice daily. At the start and end of each day after putting  the camera on when they got out of bed, participants were instructed to: complete five hand claps followed by five knee pulls in the view of the camera. These movements provide reference points to verify proper synchronization between annotations and the sensor data. At the end of each day, before taking off the camera, the participants were instructed to repeat the synchronization movements above. 
 
@@ -233,7 +233,7 @@ Each night after the synchronization movements, participants connected the camer
 
 Each morning, research assistants reviewed the received footage to identify major camera non-wear periods (anything longer than 30 min) or segments where physical activities were unclear (e.g., partially obstructed by clothing or poor lighting conditions). Each of these instances of camera non-wear were noted down. Each morning, a research assistant scheduled a video call with the participant. During this video call session, the research assistant asked questions about the activities the participant performed without the camera and collected self-report sleep data, including time-in-bed and sleep duration.
 
-## End of the Free-Living Protocol {#end-of-the-free-living-protocol}
+### End of the Free-Living Protocol {#end-of-the-free-living-protocol}
 
 On the final day of the Free-Living Protocol, participants returned to the lab to return the equipment. At the lab, participants performed a final round of synchronization movements by completing five hand claps then five knee pulls in the view of the camera. A research assistant then helped the participant remove all sensors.
 
@@ -241,15 +241,15 @@ After the participant left, the research assistant performed a final synchroniza
 
 The researcher thoroughly cleaned all equipment and downloaded data off the devices. At the end of the week, we also ensured notes on any deviations from the protocol and any problems encountered when downloading data off the camera or the GT9X Link devices were properly recorded in the participants' notes files. 
 
-# Sleep Protocol Data Collection  {#sleep-protocol-data-collection}
+## Sleep Protocol Data Collection  {#sleep-protocol-data-collection}
 
 The sleep protocol in the PAAWS study was an optional two-night protocol that took place during the FL procedure. In *addition* to wearing all sensors from the FL protocol, participants in the sleep study wore additional sensors for up to two nights to record polysomnography (PSG) sleep data during the participant’s sleep in their own home. Labeled sleep/wake times and sleep stages data were obtained from the PSG data; the labels and the raw PSG data are released with the dataset. 
 
-## Sleep Sensors {#sleep-sensors}
+### Sleep Sensors {#sleep-sensors}
 
 To record PSG data, we used the [Nox A1 PSG system](https://noxmedical.com/products/nox-a1-psg-system/). The system was configured to record thorax and abdomen RIP, nasal pressure, snore loudness, brain EEG, EKG, leg and chin EMG, EOG, and Sp02.  We configured the system so it did not record audio, but it was configured to record loudness (in dB) to determine snoring.
 
-## Preparation {#preparation-1}
+### Preparation {#preparation-1}
 
 Before the arrival of a participant, researchers prepared for the sleep protocol by:
 
@@ -264,13 +264,13 @@ Before the arrival of a participant, researchers prepared for the sleep protocol
 - Preparing a cup containing the [NU Skin prep gel](https://www.medline.com/product/Nuprep-Skin-Prep-Gel/Z05-PF110241).  
 - Preparing a cup containing [10-20 conductive gel](https://rhythmlink.com/products/gels-pastes-and-tapes-2/).
 
-## Sleep Sensor Locations and Application {#sleep-sensor-locations-and-application}
+### Sleep Sensor Locations and Application {#sleep-sensor-locations-and-application}
 
 Participants were asked to arrive at the lab in the early to late evening prior to each night they participated in the Sleep protocol.. When each participant arrived, we further explained the sleep protocol and answered questions the participant had about the PSG data collection. Because the Sleep protocol took place during the FL protocol, during the Sleep protocol sensor set-ups, the participant was already wearing the FL sensors and had consented to participate in the study. In the Sleep protocol, we applied the majority of PSG sleep sensors to participants in the lab (detailed in [In-Lab Sensor Application](#in-lab-sensor-application)). Because actual sleep took place at home, however, and participants had to travel from the lab to home, some sensors were applied by the participant at home while on a video call with a researcher shortly before going to bed (detailed in [At-Home Self Placement Application](#at-home-self-placement-sensors)). 
 
 PSG sensor application during the Sleep protocol followed the [AAST Technical Guideline for Standard Polysomnography recommended by the American Academy of Sleep Medicine (AASM)](https://www.aastweb.org/Portals/0/Docs/Resources/Guidelines/AAST%20PSG%20Guideline%20Final.pdf) to ensure high-quality recording. This included techniques to determine application sites and protocols to clean these sites to ensure optimal signal quality while minimizing discomfort. 
 
-### In-Lab Sensor Application {#in-lab-sensor-application}
+#### In-Lab Sensor Application {#in-lab-sensor-application}
 
  We applied the following sensors during the approximately one-hour in-lab preparation session before each PSG-recording sleep night:
 
@@ -286,7 +286,7 @@ We performed and documented an impedance check of head EEG and EOG sensors to en
 
 At the end of the in-lab sensor application, we scheduled a call for later that evening with the participant and sent the participant home with the additional bag and instructions we had prepared for them. When leaving the lab, participants were instructed to avoid vigorous physical activities, as these could increase the risk of wires becoming caught and dislodged, and to minimize activities that might induce sweating, which could compromise electrode adhesion. During the scheduled video call with the participant, we ensured all equipment was still functional and instructed participants how to apply the remaining sensors. All materials required to apply the remaining sensors at home were provided by us, as well as the necessary components of the Nox A1 system (e.g., the tablet computer).  
 
-### At Home Self-Placement Sensors {#at-home-self-placement-sensors}
+#### At Home Self-Placement Sensors {#at-home-self-placement-sensors}
 
 On the at-home video call with participants right before they went to bed during the Sleep protocol, following the AASM guidelines, we instructed participants to:
 
@@ -296,13 +296,13 @@ On the at-home video call with participants right before they went to bed during
 
 After the video call with us to attach the remaining sensors, just before going to bed, participants started the PSG recording and then performed bio-calibration using the Noxturnal app on a provided Android tablet. They were instructed to reach out to the research team if they encountered any problems with this final step before they went to sleep. 
 
-## Morning After the Sleep Session {#morning-after-the-sleep-session}
+### Morning After the Sleep Session {#morning-after-the-sleep-session}
 
 Participants were instructed to take all sleep sensors off when they got out of bed and to put all equipment in a provided ziplock bag. During the day, at a convenient time, participants dropped off the ziplock bag, containing all the equipment, to a researcher. 
 
 Upon receiving the equipment from the participant, we thoroughly cleaned all equipment, disposed of adhesives and one-time-use connectors, and downloaded the data off the Nox A1 device. We recorded any observed or participant-reported deviations from the protocol in the participant’s notes file. 
 
-# Sensor Synchronization Procedures {#sensor-synchronization-procedures}
+## Sensor Synchronization Procedures {#sensor-synchronization-procedures}
 
 During the PAAWS protocol, we made various efforts to create synchronization points across data modalities to ensure that data across sensors could be time-synchronized. Using these points, we synchronize the raw signals of all sensor types in the PAAWS study; however, sensors had various timestamping constraints that may have impacted the precision of our syncing, including the following: 
 
@@ -326,41 +326,41 @@ For the Lab+SimFL sensor data, we were able to confirm that this synchronization
 
 For the FL sensors, we confirmed that the two synchronization points from the box drop (see [Figure 3](#figure-4.-an-example-of-the-accelerometer-signal-shape-resulting-from-a-box-drop.-notice-that-the-blue-line-\(representing-the-z-axis\)-shows-a-clear,-sharp-peak,-which-represents-when-the-box-hits-the-flat-surface-floor.)) overlap perfectly for all sensors. During the course of the FL data collection, participants also perform synchronization moves twice per day (see [During the FreeLiving Protocol](#during-the-freeliving-protocol)). Examining these synchronization events revealed that although our synchronization was not perfect for these events, all sensors are synchronized to be within about 125 ms.
 
-## GT9X Sensor Synchronization Edge Cases {#gt9x-sensor-synchronization-edge-cases}
+### GT9X Sensor Synchronization Edge Cases {#gt9x-sensor-synchronization-edge-cases}
 
 In some cases in the Free-Living protocol, sensor data do not have easily identifiable box-drop synchronizations due to researcher error, participant error, or hardware failures. For instance, a hardware failure may include a Actigraph GT9X Link sensor stopping recording data early when the device battery became depleted; this behavior was unpredictable. When the participant reported the device battery did not last the entire protocol, a research assistant would provide the participant with a replacement sensor and noted the time the participant swapped to the new sensor for later data combination. The replacement sensor was synced normally with all the other sensors at the completion of the session, but we did not have a starting synchronization marker. In other cases, the participant did not report device failure and the sensor was returned without charge so we did not have an ending synchronization mark. In those cases, however, a research assistant  would use the synchronization moves that each participant should do twice per day  as a synchronization marker.
 
 At the conclusion of the data collection and after all GT9X Link sensors are synchronized, the data from the replacement sensor(s) (if used)were combined with data from the original sensor. A research assistant manually indicated the time when the first sensor is swapped with the second sensor and then, using a custom-made software we combined these two sensor streamed together, resulting in a single final data stream for the protocol with a potential gap of missing data from the sensor battery dying and being replaced. In some cases, we preemptively asked the participant to swap to a new sensor when the battery became low. When we combined these two data streams, we removed data from the original sensor stream past the swapping time and the leading data from the second sensor stream prior to the swapping time. If applicable, missing data are marked as “,,” entries in the data files — see [The PAAWS Dataset Codebook.docx](https://docs.google.com/document/d/1NBHiTc89rqZIpqk-gRAcRLGijC48WoBa/edit#heading=h.tyjcwt)). Because, in edge cases, we could not identify clearly the start and end point synchronization movements in the signal, the signals are likely less precisely synchronized. 
 
-## Android Phone Sensor Synchronization {#android-phone-sensor-synchronization}
+### Android Phone Sensor Synchronization {#android-phone-sensor-synchronization}
 
 When a participant had their own Android phone, custom data collection software was installed on the phone. Because we also performed the box drop move with participants’ phones, we were able to get the synchronization points by viewing the accelerometer data from the phone and comparing it with the accelerometer data from GT9X Link sensors. Using the synchronization points, we then adjusted the timestamp associated with each piece of phone data to ensure that the timestamp from phone data and phone acceleration data matches all other GT9X Link sensors.
 
-## Sleep Data Synchronization {#sleep-data-synchronization}
+### Sleep Data Synchronization {#sleep-data-synchronization}
 
 We also synchronized the accelerometer data collected from the Nox A1 PSG system during the Sleep protocol with the GT9X Link data streams. We were not able to perform a “box shake” with the Nox A1 system due to the nature of the device. Instead, because the Nox A1 system was secured to the participant’s chest, we could use the accelerometer data from this “chest-mounted” sensor and the participant’s right waist sensor to find highly correlated motions (e.g.,  postural changes such as lying on back to lying on the side) and synchronize the data streams with one another. Because there are no designed synchronization events, we had to assume that postural changes during sleep would yield similar acceleration changes at the same time on both the chest-mounted sensor and the waist sensor. Similar to the other sensor syncing protocol, we identified two synchronization points from postural changes during sleep, one at the start of the sleep session (in the evening) and one near the end of the sleep session (in the morning). Using these two synchronization points, we linearly interpolated the PSG data so that the final data stream was synchronized with the accelerometer data collected from the on-body ActiGraph GT9X sensors. 
 
 The timestamps for all the other PSG sensors are synchronized with the chest accelerometer, so synchronizing the accelerometer allowed us to synchronize all sleep data with the GT9X Link data. Based on this procedure, the final PSG data and accelerometer data are synchronized to be within 1 s of each other. 
 
-## Video Synchronization {#video-synchronization}
+### Video Synchronization {#video-synchronization}
 
 To synchronize the video with the sensors, we used the video footage of the  synchronization moves that participants performed once near the beginning of the video and once near the end of the video (the hand clapping and knee pulling). Based on these visual markers, we adjusted the annotation labels’ timestamps to match the acceleration signal.
 
-### Video Merging {#video-merging}
+#### Video Merging {#video-merging}
 
 During data collection, the camera stored video in chunks of up to ten minutes each (e.g., a 15-min of continuous recording will be stored as two 10-min and 5-min videos). We concatenated these chunks into a single video stream. Although participants were instructed to leave the camera running throughout the waking day and only cover it when they did not want to record, sometimes they turned the camera off during the day. In other cases, the research staff were troubleshooting a problem with data they observed and may have asked the participant to turn the camera on and off throughout the day. In the cases where the camera was turned off and on during the waking day, there was a gap between these ten-minute files. We used a custom-made software to determine the length of these gaps and fill in these gaps with a blacked-out video. Merged videos for a single waking day contain up to 16 hours of footage, with missing data blacked out. 
 
 Video data are not available to researchers outside of the core research team due to participant privacy requirements. 
 
-### Labeling of Synchronization Points  {#labeling-of-synchronization-points}
+#### Labeling of Synchronization Points  {#labeling-of-synchronization-points}
 
 Participants performed a “sync move” to determine a sync point between the sensor data and the video data (e.g., annotations) at the beginning of each protocol. This sync move consisted of five hand claps and five knee pulls in the Free-Living protocol and a “Frankenstein walk” in the SimFL+Lab protocol. In the case that participants did not perform a sync move (which may have happened in Free-Living protocol due to participant forgetfulness), the research assistant instead identified the timestamp when a participant changed from standing to sitting or sitting to standing, which resulted in clear change in acceleration in the Z axis in the thigh sensor. Using the merged video files and [Media Player Classic](https://mpc-hc.org/), a researcher identified the video frame that the participant completed the synchronization activity. This timestamp was used to synchronize the annotations with the raw accelerometer data.
 
-# Annotation Procedure {#annotation-procedure}
+## Annotation Procedure {#annotation-procedure}
 
 Annotators were recruited from the student body of Northeastern University. All students completed required human-subjects training (CITI) and lab safety training per university requirements. Annotators were paid by the hour and earned minimum wage. 
 
-## Annotator Training Procedure {#annotator-training-procedure}
+### Annotator Training Procedure {#annotator-training-procedure}
 
 Trainee annotators first studied the annotation taxonomy (described in detail in the[The PAAWS Dataset Codebook.docx](https://docs.google.com/document/d/1NBHiTc89rqZIpqk-gRAcRLGijC48WoBa/edit?usp=drive_web&ouid=116043598662416271074&rtpof=true)). The taxonomy contains five label categories: physical activity type (PA Type), high-level behavior (HLB), contextual parameter (CP), and experimental situation (ES). Each specific label within any category is defined within the taxonomy. Annotators were expected to annotate labels for all five categories at the same time. Posture and physical activity types are mutually exclusive labels, meaning that the participant cannot simultaneously engage in two different physical activities or posture at the same time. High-level behavior and contextual parameters are non-mutually exclusive labels, meaning a participant could engage in multiple behaviors (i.e. eating while watching TV) and have multiple contextual modifiers (i.e. wearing a backpack and carrying groceries). The experimental situation label indicates whether the data are from the controlled lab session or part of the free living period. Annotators were expected to study all labels and categories carefully. After studying the labels, trainees completed a [written exam](https://docs.google.com/document/d/e/2PACX-1vTLG5MnRXKSwSwn6U2NfPoETsqr_WzDZ6xOZUl0oBsgzxH5KYxk3D6TJ_Lx8SFdCA/pub); successful completion demonstrated their understanding of the annotation taxonomy.
 
@@ -370,7 +370,7 @@ The entire annotator training process took annotators between 5-10 hours. The di
 
 After annotation training was completed and annotator trainees reached out annotation threshold on the training set, they began annotating video data collected from participants in the PAAWS study. 
 
-## Annotation Procedures {#annotation-procedures}
+### Annotation Procedures {#annotation-procedures}
 
 Annotators annotated video using custom annotation software designed specifically for this annotation task. The software shows the current view and a “near future view” so that annotators can most easily slow down and speed up the video without missing transitions and having to backtrack in the video ([Figure 5](#figure-5.-the-custom-annotation-software-that-shows-both-the-“current”-and-“near-future”-views.-annotators-can-also-see-the-label-information-\(including-the-label-timeline-and-the-currently-selected-label\).)). Annotators were encouraged to ask a supervising member of the research team if they were uncertain about how to label a situation. 
 
@@ -384,15 +384,15 @@ After each annotation session, annotators used a quality control summary tool to
 
 Annotators were assigned videos to annotate on a rolling basis. That is, they would annotate video that happened to be available and unannotated when they were working rather than a single annotator annotating all the video from the same participant, and thus different portions of video from the same participant have typically been labeled by a mix of annotators. 
 
-### Annotation Edge Cases: SimFL+Lab Annotation Video Perspective {#annotation-edge-cases:-simfl+lab-annotation-video-perspective}
+#### Annotation Edge Cases: SimFL+Lab Annotation Video Perspective {#annotation-edge-cases:-simfl+lab-annotation-video-perspective}
 
 SimFL+Lab data were usually labeled using the third-person video recorded by the research staff member. There were six instances where the third-person recordings were corrupted or missing due to a technical problem with the camera, and there were 35 instances where a small portion of the third-person recordings were not sufficient to label the activity accurately due to poor camera handling (i.e., camera partially covered). In these instances, the first-person footage was used to annotate (or supplement the annotation) for the SimFL+Lab session. 
 
-## Annotation Data Quality Control (QC) Procedure {#annotation-data-quality-control-(qc)-procedure}
+### Annotation Data Quality Control (QC) Procedure {#annotation-data-quality-control-(qc)-procedure}
 
 For video data, the “gold-standard” annotation protocol requires two independent annotators to annotate each video, with a third annotator (often a domain expert) resolving any disagreements. However, given the limited resources, it was only possible to have each video to be annotated by one person.  Because this is not the “gold-standard”, every annotation was verified using our QC protocol twice to identify possible annotation errors prior to data release: first by the initial annotator immediately after an annotation session, then by a team of research assistants when preparing the data for release. The QC protocol included automated tools and manual spot-checking to help identify possible issues. We fixed any identified issues that arose during this quality control process. 
 
-### Post-Annotation Initial Annotator QC Check  {#post-annotation-initial-annotator-qc-check}
+#### Post-Annotation Initial Annotator QC Check  {#post-annotation-initial-annotator-qc-check}
 
 After each annotation session, the original annotator immediately ran a QC check on their annotations. Because of the nature of the SimFL+Lab and FL protocols, the QC check varied depending on which protocol was being annotated.
 
@@ -400,7 +400,7 @@ The structure of the SimFL+Lab protocol allowed for immediate QC checking at the
 
 Because the Free-Living data activities are unconstrained, the automatic post-annotation QC checks were also less constrained. The QC software reported (1) an automatic check to ensure the mapping between the HLB, PA type, and posture makes sense, (2) any anomalous length labels (defined as any label shorter than 5 s and any label longer than 60 min), and (3) any label that occurs only once in a dataset. Additionally, annotators were shown a report listing all the labels they used, their durations, the number of instances that labeled appeared in their annotations.  Annotators are expected to review all flagged instances and resolve any problems or document anomalies in the participants notes. Finally, annotators sign off virtually to ensure all quality control protocols have been followed before finalizing their labels.
 
-### Final Annotation Quality Assurance Procedure {#final-annotation-quality-assurance-procedure}
+#### Final Annotation Quality Assurance Procedure {#final-annotation-quality-assurance-procedure}
 
 After the entire SimFL+Lab or FL dataset for a participant had been labeled by the annotators, the research team performed additional quality assurance checks to ensure all previous annotation and quality control protocols were conducted accurately. 
 
@@ -408,27 +408,27 @@ On the SimFL+Lab annotations, we reran the initial annotator QC software, then t
 
 On the FL annotations, a researcher performed a visual inspection of the labels for each day of a participant’s data, while taking note of the total time spent in each label across the FL procedure. This check allows us to spot labels that deviate from an individual’s normal behaviors. In addition to the spot-check, two researchers re-ran the FL QC software, verified all the flagged instances, and ensured anomalies (if any) were correctly documented. 
 
-# Overall Data Processing and Quality Control {#overall-data-processing-and-quality-control}
+## Overall Data Processing and Quality Control {#overall-data-processing-and-quality-control}
 
 After all data streams were synchronized with each other and the data was annotated, additional automated and manual quality control checks were performed on the raw sensor data.  Any issues found during the QC procedure were either fixed or documented accordingly.
 
-### Raw Accelerometer Data Anomaly Detection {#raw-accelerometer-data-anomaly-detection}
+#### Raw Accelerometer Data Anomaly Detection {#raw-accelerometer-data-anomaly-detection}
 
 To quickly identify potential issues with the raw accelerometer data, a quality control tool— [dveloped for NHANES](https://wwwn.cdc.gov/nchs/nhanes/Pam/Default.aspx)—was used to identify anomalous accelerometer activity by automatically flagging obviously faulty signals, such as a signal with impossible g values (constant g values for all axes for an extended period), missing values (extended periods with no data or perfectly zero acceleration), or impossible spikes within the data (extended period where there are fluctuations exceeding eleven spikes per second). When the QC tool flagged a segment of data, the data were loaded into [Signaligner Pro](https://signaligner.org/) and manually inspected by a researcher familiar with accelerometer data. While the quality control tool flagged some anomalies (e.g., constant zero acceleration at recording boundaries or gaps within the data), manual inspection confirmed these were expected patterns rather than data corruption, with no actual corruption found across the dataset.
 
-### SimFL \+ Lab Data Sensor Orientation Automated Quality Control Check {#simfl-+-lab-data-sensor-orientation-automated-quality-control-check}
+#### SimFL \+ Lab Data Sensor Orientation Automated Quality Control Check {#simfl-+-lab-data-sensor-orientation-automated-quality-control-check}
 
 Because the SimFL+Lab protocol was (relatively) short and prescribed, we knew the intended orientation of all sensors during all activities. Additionally, we had taken sensor placement photos at the beginning of the protocol. When preparing the data for release, we manually inspected all of the sensor placement photos. From the photos, the only sensor orientation issue that occurred was a 180-degree rotation about the z axis. This occurred for 20 of the \~3k sensors placed throughout the SimFL+Lab protocol. All sensor orientation issues were documented in the overall data summary note (detailed in [The PAAWS Dataset Codebook.docx](https://docs.google.com/document/d/1NBHiTc89rqZIpqk-gRAcRLGijC48WoBa/edit#heading=h.ud7cjgeohnv9)).
 
-### FL Activity Detection Anomaly Checking  {#fl-activity-detection-anomaly-checking}
+#### FL Activity Detection Anomaly Checking  {#fl-activity-detection-anomaly-checking}
 
 Although we have performed an extensive manual review for FL annotation, we could miss incorrectly labeled instance in the FL dataset. Therefore, we are actively working on developing additional automated checks for anomalous data or labels. We are exploring the use of an activity prediction model to highlight potential mismatches between the data and labels that might prompt researchers to review the flagged annotation instance more closely. We are constraining the problem to training and predicting on more common activities in daily living, including standing, walking, and sedentary activities. We use a ResNet-like architecture using accelerometer data from both the thigh and the right wrist sensors using 10 s non-overlapping windows. To further account for activity imbalance in the dataset (which is highly skewed toward sedentary behavior), we use a custom training approach that gives an equal number of windows for each activity in each batch. For each participant in the currently released dataset, we trained an activity recognition model using data collected from the other 19 participants and then used that model to flag incorrectly annotated instances. Mismatches longer than sixty seconds are highlighted for manual footage review, where a trained researcher can use our annotation software to edit the label as needed.
 
-### SimFL+Lab Final Sensor and Label Quality Assurance Procedure {#simfl+lab-final-sensor-and-label-quality-assurance-procedure}
+#### SimFL+Lab Final Sensor and Label Quality Assurance Procedure {#simfl+lab-final-sensor-and-label-quality-assurance-procedure}
 
 After the dataset was collected and all previous quality control measures are applied, a trained researcher manually reviews the signal and annotated labels using Signaligner. Researchers inspect all twenty-one accelerometer signals, looking for acceleration signal that deviates from normal expected signal given an activity label (e.g., a standing label should have significant differences to a sitting label when examining the thigh accelerometer, sensors on the same limb should show generally similar signals throughout the protocol). If the researchers found any issues, they referred to the video recorded during the SimFL+Labsession to corroborate the anomaly or fix the issue. If necessary, they  documented the issue accordingly.
 
-### Free-Living Final Sensor and Label Quality Assurance Procedure {#free-living-final-sensor-and-label-quality-assurance-procedure}
+#### Free-Living Final Sensor and Label Quality Assurance Procedure {#free-living-final-sensor-and-label-quality-assurance-procedure}
 
 After the data has been collected and processed, a trained researcher did a manual inspection of the accelerometer signals and labels to ensure data were synced correctly. Any issues (unsynced accelerometer signal or labels that appear to “drift”) are carefully re-examined using the original FL video, and the syncing process was repeated as needed.
 

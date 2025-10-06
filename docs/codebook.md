@@ -3,7 +3,7 @@
 The PAAWS dataset consists of data from the PAAWS study in which there were three data collection protocols: the Simulated Free Living and Exercise Laboratory (SimFL+Lab) protocol, the Free Living (FL) protocol, and an optional Sleep protocol that took place during the FL protocol and provided labeled PSG data from up to two nights of at-home sleep. In this codebook, we discuss the data that resulted from each protocol, not how it was collected. To review each of the data collection protocols, refer to [The PAAWS Study Data Collection Protocol](https://docs.google.com/document/d/1kgi7MNqh516IOvbND5aj7rMhJ-_FHNIzrDQDF_l2Spc/edit?tab=t.0).
 
 
-# Overview of Available Data and Directory Structure  {#overview-of-available-data-and-directory-structure}
+## Overview of Available Data and Directory Structure  {#overview-of-available-data-and-directory-structure}
 
 The dataset is available at TODO. The dataset is organized firstly by collection protocol (e.g., FL, SimFL+Lab, or Sleep) and then by each participant's data for that protocol. All data from a single participant, labeled as DS\_\[ID\], collected during a specific protocol, are stored within the respective protocol subfolder (summarized in [Figure 1](#figure-1.-directory-structure-of-the-paaws-dataset.)).
 
@@ -106,7 +106,7 @@ The dataset is available at TODO. The dataset is organized firstly by collection
 `│   │   └── DS_ID-Sleep-Night2_scored_events.csv`  
 `│   └── ...`
 
-# Available Data and Description of Each Data Type {#available-data-and-description-of-each-data-type}
+## Available Data and Description of Each Data Type {#available-data-and-description-of-each-data-type}
 
 The PAAWS dataset contains raw measurements from multiple sets of sensors for each protocol and human-generated annotations of activity based on an activity taxonomy. 
 
@@ -132,7 +132,7 @@ For the participants who completed the Sleep protocols, the PAAWS\_Sleep subfold
 - Polysomnography (PSG) data from up to two nights collected using the Noxturnal A1 PSG system at home, during natural sleep  
 - Wake/Sleep times, sleep stages, and other sleep-related events (described in [Table 15](#table-15.-all-possible-psg-event-types-in-the-psg-sleep-labels-\(ds_id-sleep-night[1/2]_scored_events.csv\).-an-event-can-either-be-automatically-scored-by-the-noxturnal-psg-software-\(auto\),-automatically-scored-with-expert-edits-\(auto+manual-editing\),-or-scored-only-by-an-expert-sleep-researcher-\(manual\).)) that are manually labeled by trained sleep researchers using the PSG data.
 
-## Data Summary Table {#data-summary-table}
+### Data Summary Table {#data-summary-table}
 
 For users of the data curious about understanding demographics, available data, and potential issues with the data by participant, we provide a summary table of the dataset in the /PAAWS\_Data\_Summary.csv file. We define each column header and possible values in [Table 1](#table-1.-column-headings-and-possible-values-in-the-paaws_data_summary.csv-file.).
 
@@ -159,7 +159,7 @@ For users of the data curious about understanding demographics, available data, 
 
 #### 
 
-## Accelerometer Data {#accelerometer-data}
+### Accelerometer Data {#accelerometer-data}
 
 We collected accelerometer data using ActiGraph [GT9X Link sensors](https://s3.amazonaws.com/actigraphcorp.com/wp-content/uploads/2020/03/05155628/ActiGraph_Link_UserGuide_E.200.6001_Revision6_FINAL.pdf) sampling at 80 Hz. Accelerometer data from each sensor are stored in the `accel/` folder following the naming convention: `accel/DS_ID-[Free/Lab]-[SensorWearLocation].csv`. In the FL protocol, data were collected from six wear locations, and in the SimFL+Lab protocol, data were collected from 21 wear locations. Refer to [The PAAWS Study Data Collection Protocol](https://docs.google.com/document/d/1kgi7MNqh516IOvbND5aj7rMhJ-_FHNIzrDQDF_l2Spc/edit?tab=t.0#heading=h.vx1227) for detailed descriptions of sensor wear locations.
 
@@ -190,17 +190,17 @@ The start time, start date, serial number, and download date fields (shown using
 
 During the data collection protocol, the sensor might be plugged into a docking station (for charging or debugging). When plugged in, the sensor is not collecting data. Accelerometer values for this time period are represented by consecutive rows of zero acceleration across all three axes (e.g., `0,0,0`). 
 
-### Partially missing accelerometer data {#partially-missing-accelerometer-data}
+#### Partially missing accelerometer data {#partially-missing-accelerometer-data}
 
 Because the FL protocol spans eight continuous days, a research assistant may have swapped a current sensor with a newer one if a sensor had an issue, such as dying due to battery drain. Swapping a sensor in the middle of the FL protocol may have resulted in some missing data. At the end of the FL protocol, a research assistant combined the data collected from the initial sensors with the swapped-in sensors (see [The PAAWS Study Data Collection Protocol](https://docs.google.com/document/d/1kgi7MNqh516IOvbND5aj7rMhJ-_FHNIzrDQDF_l2Spc/edit?tab=t.0#heading=h.4k668n3) for details on syncing and merging data from different sensors). The result of this process yields an accelerometer file that might seem to have missing data in the case where one sensor died prematurely before the research assistant could swap the sensor. These missing data are documented in their respective [`notes/`](#notes-data) folders.
 
 Missing accelerometer data due to sensors not collecting any data are represented by “blank” lines with no accelerometer values and just two commas (e.g., “,,” as a line in the CSV).  
 
-### Fully missing accelerometer data  {#fully-missing-accelerometer-data}
+#### Fully missing accelerometer data  {#fully-missing-accelerometer-data}
 
 In some cases, a malfunctioned sensor (e.g., due to a firmware or hardware error) did not collect any data. The entire accelerometer data stream from that sensor was lost, and we documented all such instances both in the [data summary table](#data-summary-table) and in the participants’ [notes](#notes-data) file.
 
-## IMU Data (SimFL+Lab Only)  {#imu-data-(simfl+lab-only)}
+### IMU Data (SimFL+Lab Only)  {#imu-data-(simfl+lab-only)}
 
 While collecting accelerometer data at 80 HZ, we additionally collected IMU data at 100 Hz using the ActiGraph GT9X Link sensors. Because collecting the IMU drains the sensors batteries, IMU data were only collected during the PAAWS SimFL+Lab protocol. The IMU data collected from each sensor are stored in the `IMU/` folder following the naming convention: `IMU/DS_ID-Lab-[WearLocation]-IMU.csv`.  IMU data were collected from all 21 sensor wear locations in the SimFL+Lab protocol (see [The PAAWS Study Data Collection Protocol](https://docs.google.com/document/d/1kgi7MNqh516IOvbND5aj7rMhJ-_FHNIzrDQDF_l2Spc/edit?tab=t.0#heading=h.49x2ik5)).
 
@@ -237,11 +237,11 @@ After the header, each IMU data CSV file has ten columns ([Table 3](#table-3.-co
 | Gyroscope Y | Speed of the rotation in the Y axis | A floating point number between \-2000 and 2000\. Unit is degree/sec |
 | Gyroscope Z | Speed of the rotation in the Z axis | A floating point number between \-2000 and 2000\. Unit is degree/sec |
 
-### Missing IMU data  {#missing-imu-data}
+#### Missing IMU data  {#missing-imu-data}
 
 In some cases, a malfunctioned sensor (e.g., due to a firmware or hardware error) did not collect any data, or an incorrectly initialized sensor did not collect any IMU data. The entire IMU data stream from that sensor was lost, and we documented all such instances both in the [data summary table](#data-summary-table) and in the participants’ [notes](#notes-data) file.
 
-## Heart Rate Data (SimFL+Lab Only) {#heart-rate-data-(simfl+lab-only)}
+### Heart Rate Data (SimFL+Lab Only) {#heart-rate-data-(simfl+lab-only)}
 
 During the SimFL+Lab protocol, we collected heart rate data using a [Polar H10 heart rate monitor](https://www.polar.com/us-en/sensors/h10-heart-rate-sensor) sampling at 1 Hz. Heart rate data are stored in the `heart_rate/` folder and follow the file naming convention /heart\_rate/`DS_[ID]-Lab-HR.csv`. The HR data CSV for each participant has two columns ([Table 4](#table-4.-columns-in-the-heart-rate-data-file-\(ds_id-lab-hr.csv\).)). 
 
@@ -256,7 +256,7 @@ We parsed the `DS_ID-Lab-HR.csv` file from the original raw AGD file ([a proprie
 | Timestamp | The timestamp when this heart rate is recorded  | Timestamp is in the format `YYYY-MM-DD HH:MM:SS` |
 | HR | The heart rate | A non-zero integer representing the number of heartbeats per minute |
 
-## Metabolic Data (SimFL+Lab Only) {#metabolic-data-(simfl+lab-only)}
+### Metabolic Data (SimFL+Lab Only) {#metabolic-data-(simfl+lab-only)}
 
 We collected metabolic data via the [Cosmed Quark RMR CPET](https://www.cosmed.com/en/products/cardio-pulmonary-exercise-test/quark-rmr) indirect calorimeter for a subset of activities performed during the SimFL+Lab protocol (see [The PAAWS Study Data Collection Protocol](https://docs.google.com/document/d/1kgi7MNqh516IOvbND5aj7rMhJ-_FHNIzrDQDF_l2Spc/edit?tab=t.0#heading=h.5ferw2w7tz62)). For each activity completed while wearing the metabolic mask, we calculated the metabolic equivalent of task (MET) from the raw data using the following formula:   
 MET \= VO2(mL/min)3.5 (mL/kg/min)  Weight (kg).  
@@ -273,13 +273,13 @@ For each activity we collected metabolic data for, we asked participants to perf
 | PA\_Type | The activity performed | The [Annotation label taxonomy](#annotation-label-taxonomy) section describes the activities set performed with the indirect calorimeter |
 | Parsed\_MET | The average breath-by-breath metabolic value taken from the last minute of the activity | A number |
 
-## Phone Data {#phone-data}
+### Phone Data {#phone-data}
 
 Phone data were collected from participants who owned and used a compatible Android device as their personal phone; in such cases, a custom-built Android app was installed on the phone. The phone data includes data from the ambient pressure sensor, light sensor, proximity sensor, accelerometer sensor, data about phone usage (i.e., generic phone usage and notifications sent to the user), and hourly step counts obtained from the Android API.
 
 All data collected from the Android app is stored in the `phone_data/` folder. Phone data CSV files are named according to the data they contain and follow the structure `DS_ID-[Free/Lab]-[DATA_TYPE].csv`. 
 
-### Phone Data: Ambient Pressure Data {#phone-data:-ambient-pressure-data}
+#### Phone Data: Ambient Pressure Data {#phone-data:-ambient-pressure-data}
 
 The Android phone’s pressure sensor measured the ambient pressure. Data are provided in CSV format with the naming convention: `DS_ID-[Free/Lab]-AmbientPressureManager.csv`. [Table 6](#table-6.-columns-in-the-ambient-pressure-file-\(ds_id-[free/lab]-ambientpressuremanager.csv\).) details the columns in this CSV file. 
 
@@ -291,7 +291,7 @@ The Android phone’s pressure sensor measured the ambient pressure. Data are pr
 | hPa | The ambient pressure | A float. Unit is milibars |
 | MAX\_VALUE | The maximum possible value that this sensor can provide | A float |
 
-### Phone Data: Light Sensor {#phone-data:-light-sensor}
+#### Phone Data: Light Sensor {#phone-data:-light-sensor}
 
 Android phone's built-in light sensor measured the ambient light. Data are provided in CSV format with the naming convention: `DS_ID-[Free/Lab]-LightSensorStats.csv`. [Table 8](#table-8.-the-columns-in-the-light-sensor-data-file-\(ds_id-[free/lab]-lightsensorstats.csv\).) details the columns in this CSV file.
 
@@ -303,7 +303,7 @@ Android phone's built-in light sensor measured the ambient light. Data are provi
 | LUMINANCE | The illuminance recorded | A float. Unit is lux |
 | MAX\_VALUE | The maximum possible value that this sensor can provide | A float |
 
-### Phone Data: Proximity sensor {#phone-data:-proximity-sensor}
+#### Phone Data: Proximity sensor {#phone-data:-proximity-sensor}
 
 The Android phones’ proximity sensor measured the approximate distance to an object directly in front of the phone’s face (e.g., the user’s face). Data are provided in CSV format with the naming convention: `DS_ID-[Free/Lab]-ProximitySensorManagerService.csv`. [Table 9](#table-9.-the-columns-in-the-proximity-data-file-\(ds_id-[free/lab]-proximitysensormanagerservice.csv\).) details the columns in this CSV file.
 
@@ -315,9 +315,9 @@ The Android phones’ proximity sensor measured the approximate distance to an o
 | PROXIMITY | The proximity value | A float. Unit is cm |
 | MAX\_VALUE | The maximum possible value that this sensor can provide | A float  |
 
-### 
+#### 
 
-### Phone Data: Acceleration {#phone-data:-acceleration}
+#### Phone Data: Acceleration {#phone-data:-acceleration}
 
 The Android phone’s built-in accelerometer measured triaxial acceleration data. Data are stored in CSV format with the naming conventions: `DS_ID-[Free/Lab]-Acceleration.csv`. Using the Android API, we set the sampling rate to 50 Hz. Although the Android API tries to keep a constant sampling rate following our settings, the actual sampling rate might not be exactly 50 Hz. [Table 12](#table-12.-the-columns-in-the-acceleration-data-file-\(ds_id-[free/lab]-acceleration.csv\)-.) details the columns in this CSV file.
 
@@ -330,7 +330,7 @@ The Android phone’s built-in accelerometer measured triaxial acceleration data
 | Acceleration Y | Acceleration in the Y axis | A float, unit is in g |
 | Acceleration Z | Acceleration in the Z axis | A float, unit is in g |
 
-### Phone Data: App Event Counts {#phone-data:-app-event-counts}
+#### Phone Data: App Event Counts {#phone-data:-app-event-counts}
 
 We also collected phone usage data (i.e., if the user turned the phone on or if the user launched an application). Data are provided in CSV format with the naming convention: `DS_ID-[Free/Lab]-AppEventCounts.csv`. [Table 7](#table-7.-the-columns-in-the-app-event-counts-file-\(ds_id-[free/lab]-appeventcounts.csv\).) details the columns in this CSV file.
 
@@ -342,7 +342,7 @@ We also collected phone usage data (i.e., if the user turned the phone on or if 
 | PACKAGE\_NAME | The name of the application that participants interacted with | A string representing the app name |
 | EVENT\_TYPE | Phone usage and app usage event logs  | A string representing the event logs. The [UsageEvents.Event Android API](https://developer.android.com/reference/android/app/usage/UsageEvents.Event#constants_1) provides a complete list of possible interaction events. Based on our experiments, some of the more important events are “KEYGUARD\_HIDDEN”/ “KEYGUARD\_SHOWN” for screen on/off states, and “MOVE\_TO\_FOREGROUND”/”MOVE\_TO\_BACKGROUND” when users interact with an application or when an application displays notifications in the foreground    |
 
-### Phone Data: Notification Logs {#phone-data:-notification-logs}
+#### Phone Data: Notification Logs {#phone-data:-notification-logs}
 
 We used the Android API to log the package names of notifications sent to the phone. Notification log data are stored in CSV format with the following naming convention: `DS_ID-[Free/Lab]-NotificationCounts.csv`. [Table 10](#table-10.-the-columns-in-the-notification-log-data-file-\(ds_id-[free/lab]-notificationcounts.csv\).) details the columns in this CSV file.
 
@@ -357,7 +357,7 @@ We used the Android API to log the package names of notifications sent to the ph
 | HEADER\_TIME\_STAMP | The time when any application sends a notification to the user. | Time in `YYYY-MM-DD HH:MM:SS` format |
 | PACKAGE\_NAME | The app that created this notification | A string |
 
-### Phone Data: Step count {#phone-data:-step-count}
+#### Phone Data: Step count {#phone-data:-step-count}
 
 We used the Android API to track hourly step counts. The step count data are stored in CSV format with the naming convention: `DS_ID-[Free/Lab]-StepCounterService.csv`.  
 Step counts are recorded every hour. The step counts at each row reflect the total number of steps that participants took since the previous time step count was recorded. The first value reported in the CSV file is the total number of steps taken since the last time the phone was rebooted. [Table 11](#table-11.-the-columns-in-the-step-count-data-file-\(ds_id-[free/lab]-stepcounterservice.csv\).) details the columns in this CSV file.
@@ -370,7 +370,7 @@ Step counts are recorded every hour. The step counts at each row reflect the tot
 | STEP\_THIS\_HOUR | The total step counts since the last time step counts were reported. The first value in the file is the total number of steps since the phone was rebooted | An integer |
 | STEP\_SINCE\_REBOOT | Number of step counts since the phone was last rebooted | An integer |
 
-## PSG Sleep Data (Sleep Protocol Only) {#psg-sleep-data-(sleep-protocol-only)}
+### PSG Sleep Data (Sleep Protocol Only) {#psg-sleep-data-(sleep-protocol-only)}
 
 During up to two nights of at-home sleep during the Sleep protocol, polysomnography (PSG) sleep data were recorded using the [Nox A1 PSG system](https://noxmedical.com/products/nox-a1-psg-system/) (see [The PAAWS Study Data Collection Protocol](https://docs.google.com/document/d/1kgi7MNqh516IOvbND5aj7rMhJ-_FHNIzrDQDF_l2Spc/edit?tab=t.0#heading=h.1v1yuxt)). We configured the Nox A1 PSG system not to record audio, but the system still recorded “loudness” (in dB) to determine snoring. The raw PSG sleep data was then scored (labeled) by trained researchers specializing in PSG data to determine the sleep/wake times, sleep stages, and other sleep events. 
 
@@ -410,7 +410,7 @@ PSG data and scored sleep events are stored in the `sleep/` folder. The PSG data
 | o1-m2 | O1 (EEG) and M2 (EEG) | Sleep Staging (arousals, sleep/wake transitions) | Derivation of EEG activity in the left occipital lobe (right mastoid process reference) |
 | o2-m1 | O2 (EEG) and M1 (EEG) | Sleep Staging (arousals, sleep/wake transitions) | Derivation of EEG activity in the right occipital lobe (left mastoid process reference) |
 
-### Sleep data scoring {#sleep-data-scoring}
+#### Sleep data scoring {#sleep-data-scoring}
 
 The scored sleep data (labels for sleep derived from the PSG data) are stored in the `sleep/` folder in CSV format with the naming convention: `DS_ID-Sleep-Night[1/2]_scored_events.csv`. [Table‌ 14](#table-14.-details-of-columns-in-the-scored-sleep-event-file-\(ds_id-sleep-night[1/2]_scored_events.csv\)-derived-from-the-raw-psg-data.) details the different columns provided in the scored events file used to analyze sleep stages and sleep events. Sleep events can be automatically tagged (e.g., different sleeping posture automatically computed by the Noxturnal software), manually tagged (e.g., different sleep stages), or tagged automatically with later manual adjustment (e.g., oxygen desaturation events can be automatically detected but require manual confirmation to ensure the events are not caused by poor connection). All possible sleep events are detailed in [Table 15](#table-15.-all-possible-psg-event-types-in-the-psg-sleep-labels-\(ds_id-sleep-night[1/2]_scored_events.csv\).-an-event-can-either-be-automatically-scored-by-the-noxturnal-psg-software-\(auto\),-automatically-scored-with-expert-edits-\(auto+manual-editing\),-or-scored-only-by-an-expert-sleep-researcher-\(manual\).).
 
@@ -459,7 +459,7 @@ The scored sleep data (labels for sleep derived from the PSG data) are stored in
 | A. Mixed | Mixed Apnea | Manual | An amplitude decrease on flow and/or effort signals, which starts or ends in an epoch scored as sleep, has a duration of \>=10 seconds, contains one period without evidence of breathing effort and flow obstruction, contains a second period with evidence of flow obstruction and/or RIP breathing effort |
 | A. Obstructive | Obstructive Apnea | Manual | An amplitude decrease on flow signal,s which starts or ends in an epoch scored as sleep, has a duration of \>=10 seconds, amplitude decrease \>=90% when compared to the same signal during stable breathing, and contains evidence of RIP breathing effort |
 
-## Waking Day Annotations Data {#waking-day-annotations-data}
+### Waking Day Annotations Data {#waking-day-annotations-data}
 
 During the FL and SimFL+Lab protocols, participants’ movements were captured on video so we could derive after-the-fact waking day annotations of their activities. During the SimFL+Lab protocol, participants were recorded by a research team member from a third-person viewpoint in addition to wearing the front-facing ego-centric camera they wore throughout the FL protocol. During the FL protocol, participants wore an egocentric front-facing camera on a lanyard around their necks during their waking hours. A trained annotator later viewed the camera footage to annotate the participant’s activities with start/end times at up to a second-by-second precision. More information on our annotation protocols and annotator training can be found in [The PAAWS Study Data Collection Protocol](https://docs.google.com/document/d/1kgi7MNqh516IOvbND5aj7rMhJ-_FHNIzrDQDF_l2Spc/edit?tab=t.0#heading=h.28h4qwu).
 
@@ -479,21 +479,21 @@ Annotated labels are stored in each participant’s folder in the `label/` subfo
 
 The annotated labels (as well as all other data that we collected and provided) have been manually synchronized to correct for individual device time drift. Users of the dataset can use the annotation data directly with the acceleration data (or any other data provided).
 
-### Annotation Label Taxonomy {#annotation-label-taxonomy}
+#### Annotation Label Taxonomy {#annotation-label-taxonomy}
 
 To label waking day activities in the PAAWS dataset, we created a custom activity taxonomy. The taxonomy is designed to enable labeling of contextualized free-living activity and posture. Each annotation consists of at least two labels: the participant’s posture (one of 13 mutually exclusive options) and physical activity type (one of 49 mutually exclusive options). The taxonomy covers major activities but balances comprehensiveness with the practical constraint that the more complex the taxonomy is, the more difficult the annotation task becomes.  Activities were selected based on common activities in the American Time Use Survey and those found in other datasets. Researchers using our dataset will not be able to view the original front-facing camera video (used for annotation because we must protect participants' privacy). Therefore, to help researchers using the dataset interpret their results, our annotations also include non-mutually exclusive labels about the participant's “high-level behavior” (HLB) and additional context that may impact the participant's physical activity. The HLB and context labels are meant to provide helpful information when interpreting results detecting activity and posture, but they would need to be used cautiously for model training or evaluation directly because they are non-mutually exclusive and generally have lower inter-rate reliability. 
 
 Specific details about the annotation taxonomy used in the PAAWS study are described in [AnnotationScheme.xlsx](https://docs.google.com/spreadsheets/d/1DrTcPanlhqX8KbyHh8_slOPdM05QJQDH/edit?usp=drive_link&ouid=104002928114711807381&rtpof=true&sd=true). Users of the dataset who have specific questions about the taxonomy or annotator training and practices can leave comments in the annotation taxonomy description [AnnotationScheme.xlsx](https://docs.google.com/spreadsheets/d/1DrTcPanlhqX8KbyHh8_slOPdM05QJQDH/edit?usp=drive_link&ouid=104002928114711807381&rtpof=true&sd=true).
 
-## Notes Data {#notes-data}
+### Notes Data {#notes-data}
 
 During both the FL and SimFL+Lab protocols, a research assistant took notes regarding general participant behavior and possible deviations from either protocol. Additionally, a research assistant performed daily recall sessions with each participant during the FL protocol and recorded their responses. The `notes/` folder contains all notes taken during a specific participant's data collection. 
 
-### General Note {#general-note}
+#### General Note {#general-note}
 
 General notes on participants’ behaviors or any equipment issues are provided as a raw text file with the naming convention: `DS_ID-[Free/Lab]-GeneralNotes.txt`. This note might provide additional context on how participants behaved or whether there are special circumstances (e.g., participant had a prosthetic leg) during the data collection process that data users should consider. 
 
-### Protocol Deviations Notes (SimFL+Lab Only) {#protocol-deviations-notes-(simfl+lab-only)}
+#### Protocol Deviations Notes (SimFL+Lab Only) {#protocol-deviations-notes-(simfl+lab-only)}
 
 We provide detailed notes on possible deviations from the usual protocol in the SimFL+Lab session. These notes are in CSV format with the naming convention `DS_[ID]-Lab-ProtocolDeviations.csv.`Each row in the `DS_[ID]-Lab-ProtocolDeviations.csv` represents an instance where the participant did not follow the instructions in our protocol, or there was a sensor wear deviation (e.g., a sensor was not worn at a given moment).. The column names for the protocol deviation notes are defined in [Table 17](#table-17.-detailed-description-for-each-column-in-the-computer-readable-note-file-\(ds_id-lab-protocoldeviations.csv\)-from-simfl+lab-session).
 
@@ -507,7 +507,7 @@ We provide detailed notes on possible deviations from the usual protocol in the 
 | SENSOR | What sensors were affected for this note item | Possible sensors to (not) wear are: `Accelerometer/IMU` (Actigraph GT9X devices), `HR_Monitor` (heart rate monitor), `MET_Cart` (the metabolic mask) |
 | PROTOCOL\_ACTIVITY\_AFFECTED | What activities were affected | A string representing the protocol affected. A detailed list of activities performed in the lab is provided in [SimFL+Lab data collection protocol](protocol.md#simfl+lab-data-collection-protocol). |
 
-### Recall Notes (FL Only) {#recall-notes-(fl-only)}
+#### Recall Notes (FL Only) {#recall-notes-(fl-only)}
 
 We also provide detailed notes from the daily recall sessions during the FL protocol. These notes encompass self-report data included recalled activities, sensor wear issues. These notes are in CSV format with the following naming convention: `DS_ID-Free-RecallNotes.csv`.
 
